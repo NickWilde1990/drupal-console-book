@@ -21,12 +21,12 @@ Argument | Details
 content-type | Content Type to be exported
 
 ## Examples
-* Provide a content type  and module name
+* Provide a content type and module name
 ```
 drupal config:export:content:type page \
   --module="demo"
 ```
-* If you want export content type provide the optional config
+* Export content type as an optional config for the provided module.
 ```
 drupal config:export:content:type page \
   --module="demo" \

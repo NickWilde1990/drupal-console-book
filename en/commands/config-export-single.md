@@ -24,7 +24,7 @@ Option | Details
 drupal config:export:single \
   --name=config.settings.name
 ```
-* if uuid and/or config hashes will be removed.
+* Export with uuid and config hashes removed.
 ```
 drupal config:export:single \
   --name=config.settings.name \

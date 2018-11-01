@@ -21,7 +21,7 @@ Option | Details
 drupal config:export  \
   --directory="path/to/export"
 ```
-* If export will be in a compressed file and/or if uuid and config hashes will be removed.
+* Export as a compressed file with uuid and config hashes removed.
 ```
 drupal config:export  \
   --directory="path/to/export" \

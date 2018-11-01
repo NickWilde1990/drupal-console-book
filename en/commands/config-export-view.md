@@ -1,5 +1,5 @@
 # config:export:view
-Export a view in YAML format inside a provided module to reuse in other website.
+Export a view in YAML format inside a provided module to reuse in another website.
 
 **Usage:**
 ```
@@ -20,11 +20,19 @@ Argument | Details
 view-id | View ID
 
 ## Examples
-* Provide a view id
+* Perform a simple export.
 ```
 drupal config:export:view viewid
 ```
-* You can provide the interactive values like parameter.
+* Export as optional config for the provided module.
+```
+drupal config:export:view viewid \
+  --module="modulename" \
+  --optional-config \
+  --include-module-dependencies
+```
+* Export as config for the provided module, updating the module's info.yml
+with any module dependencies from the view.
 ```
 drupal config:export:view viewid \
   --module="modulename" \
